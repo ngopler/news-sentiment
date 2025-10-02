@@ -4,3 +4,4 @@ matplotlib>=3.8,<4
 python-dotenv>=1.0,<2
 google-generativeai==0.8.5          # versi terakhir yang tersedia
 cerebras-cloud-sdk>=1.0,<2           # versi minimal 1.0
+openpyxl>=3.1.0
