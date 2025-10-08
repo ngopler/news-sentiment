@@ -8,19 +8,13 @@ import google.generativeai as genai
 from cerebras.cloud.sdk import Cerebras
 
 
-# Sembunyikan ikon GitHub Streamlit Cloud
 hide_github_icon = """
     <style>
-    a[href*="github.com/streamlit"] {
-        visibility: hidden;
-    }
-    a[href*="github.com"] svg {
-        display: none;
-    }
-    footer {visibility: hidden;}
+        [data-testid="stToolbar"] {visibility: hidden;}
     </style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 
 # --- Load API Key ---
 load_dotenv()
